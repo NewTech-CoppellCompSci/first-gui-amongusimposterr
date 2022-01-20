@@ -21,7 +21,7 @@ public class guirunner {
 			String address = fill.next();
 			String imagelocation = fill.next();
 			house.add(new House(bedrooms, bathrooms, cost, address, imagelocation));
-
+//filling arraylist with stuff
 		}
 		buildGUI(house);
 
@@ -45,7 +45,7 @@ public class guirunner {
 				buildGUI2(0, house);
 
 			}
-
+//adding buttons for everything with addresses
 			JButton button = new JButton(house.get(0).getaddress());
 		});
 
@@ -90,7 +90,7 @@ public class guirunner {
 		
 		
 		
-		
+		//adding everything to frame
 		frame.add(button1);
 		frame.add(button2);
 		frame.add(button4);
@@ -101,6 +101,7 @@ public class guirunner {
 	}
 
 	private static void buildGUI2(int whichone, ArrayList<House> hobohut) {
+		//method that builds another 
 		JFrame frame = new JFrame("gg");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
